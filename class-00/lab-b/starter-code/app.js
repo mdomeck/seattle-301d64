@@ -13,22 +13,20 @@ console.log('The old way:', theOldWay('Code 301'));
 // STEP 2
 // We can refactor our first function to use an arrow function.
 // The word "function" is removed and an arrow is added in between the parameter and the opening curly brace
-const theNewWay = (course) => {
+const theNewWay = course => {
   return `I am currently enrolled in ${course}`;
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log('The new way:', theNewWay('Code 301'));
+console.log('The new way:', theNewWay('Code 301'));
 
 
 // STEP 3
 // When we have one parameter, we can omit the parentheses
-const withoutParens = course => {
-  return `I am currently enrolled in ${course}`;
-};
+const withoutParens = course => `I am currently enrolled in ${course}`;
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log('Without parens:', withoutParens('Code 301'));
+console.log('Without parens:', withoutParens('Code 301'));
 
 
 // STEP 4
